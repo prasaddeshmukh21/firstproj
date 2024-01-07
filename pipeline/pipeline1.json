@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "copy data from git to hospital",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -18,9 +18,8 @@
 					"source": {
 						"type": "DelimitedTextSource",
 						"storeSettings": {
-							"type": "AzureBlobFSReadSettings",
-							"recursive": true,
-							"enablePartitionDiscovery": false
+							"type": "HttpReadSettings",
+							"requestMethod": "GET"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
@@ -49,13 +48,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_population_tsv_gz",
+						"referenceName": "ds_hospitalcsv",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "ds_population_tsv",
+						"referenceName": "ds_hospitaladlsgen2",
 						"type": "DatasetReference"
 					}
 				]
