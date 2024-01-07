@@ -1,0 +1,9 @@
+{
+	"name": "adfpipelinesprac",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "10bf82de-76a5-4bd2-bcbf-caa5ab67e769",
+		"tenantId": "7f6534e8-754a-40b9-b271-8d779ec6c526"
+	}
+}
