@@ -1,0 +1,22 @@
+{
+	"name": "ds_hospitalcsv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_hositaldata",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "/cloudboxacademy/covid19/main/ecdc_data/hospital_admissions.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
